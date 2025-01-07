@@ -10,7 +10,7 @@ const addtopicpage = () => {
     const handlesubmit = async (e)=>{
         e.preventDefault()
         try {
-            const resp = await axios.post('todins-cgi43urz4-krishnas-projects-c08681f0.vercel.app/api/topicsroute',{
+            const resp = await axios.post('https://todins.vercel.app/api/topicsroute',{
                 title,
                 description
             })
