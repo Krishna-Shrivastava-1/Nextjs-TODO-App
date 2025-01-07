@@ -34,8 +34,8 @@ console.log(data)
   return (
     <div>
       <form onSubmit={handleupdate} className='w-full flex items-center justify-center flex-col gap-y-3' >
-        <input value={newtitle} onChange={(e) => setnewtitle(e.target.value)} type="text" placeholder='Edit Title' className='bg-slate-900 text-xl outline-none px-2 w-[40%]' />
-        <textarea value={newdescription} onChange={(e) => setnewdescription(e.target.value)} type="text" placeholder='Edit Topic Description' className='bg-slate-900 text-xl outline-none px-2 w-[40%] whitespace-pre' />
+        <input value={newtitle} onChange={(e) => setnewtitle(e.target.value)} type="text" placeholder='Edit Title' className='bg-slate-900 text-xl outline-none px-2 w-full p-2 md:w-[40%]' />
+        <textarea value={newdescription} onChange={(e) => setnewdescription(e.target.value)} type="text" placeholder='Edit Topic Description' className='bg-slate-900 text-xl outline-none px-2 w-full p-2 md:w-[40%]  whitespace-pre' />
         <button type='submit' className='bg-green-600 p-2' >Update Topic</button>
       </form>
     </div>

@@ -23,8 +23,8 @@ const addtopicpage = () => {
     return (
         <div>
             <form onSubmit={handlesubmit} className='w-full flex items-center justify-center flex-col gap-y-3' >
-                <input onChange={(e)=>settitle(e.target.value)} type="text" placeholder='Title' className='bg-slate-900 text-xl outline-none px-2 w-[40%]' />
-                <textarea onChange={(e)=>setdescription(e.target.value)} type="text" placeholder='Topic Description' className='bg-slate-900 text-xl outline-none whitespace-pre px-2 w-[40%]' />
+                <input onChange={(e)=>settitle(e.target.value)} type="text" placeholder='Title' className='bg-slate-900 text-xl outline-none px-2 w-full p-2 md:w-[40%]' />
+                <textarea onChange={(e)=>setdescription(e.target.value)} type="text" placeholder='Topic Description' className='bg-slate-900 text-xl outline-none whitespace-pre px-2 w-full p-2 md:w-[40%]' />
                 <button type='submit' className='bg-green-600 p-2' >Add Topic</button>
             </form>
         </div>
