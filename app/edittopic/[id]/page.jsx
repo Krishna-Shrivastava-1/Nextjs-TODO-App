@@ -9,8 +9,7 @@ const EditTopic = ({ params }) => {
   const [dat, setdat] = useState([])
   const gettpicbyid = async () => {
     try {
-    const resp =  await axios.get(`todins-9g25hzptp-krishnas-projects-c08681f0.vercel.app
-/api/topicsroute/${id}`, { cache: 'no-store' })
+    const resp =  await axios.get(`https://todis.vercel.app/api/topicsroute/${id}`, { cache: 'no-store' })
     setdat(resp.data)
     } catch (error) {
       console.log(error)
