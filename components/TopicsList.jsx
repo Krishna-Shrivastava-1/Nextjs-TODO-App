@@ -8,7 +8,7 @@ const TopicsList = () => {
     const [alltopic, setalltopic] = useState([])
     const gettingtopic = async () => {
         try {
-            const resp = await axios.get('http://localhost:3000/api/topicsroute', { cache: "no-store" })
+            const resp = await axios.get('todins-cgi43urz4-krishnas-projects-c08681f0.vercel.app/api/topicsroute', { cache: "no-store" })
             setalltopic(resp.data)
         } catch (error) {
             console.log(error)
@@ -20,7 +20,7 @@ const TopicsList = () => {
     const handledelete = async (id) => {
         const confirmd = confirm('Are you Sure?')
         if (confirmd) {
-            await axios.delete(`http://localhost:3000/api/topicsroute?id=${id}`)
+            await axios.delete(`todins-cgi43urz4-krishnas-projects-c08681f0.vercel.app/api/topicsroute?id=${id}`)
         }
     }
 
