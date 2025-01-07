@@ -19,7 +19,7 @@ console.log(data)
   const handleupdate = async (e) => {
     e.preventDefault()
     try {
-      await axios.put(`https://todins.vercel.app/api/topicsroute/${data?._id}`, {
+      await axios.put(`todins-o4n8k47an-krishnas-projects-c08681f0.vercel.app/api/topicsroute/${data?._id}`, {
         newtitle,
         newdescription
       })
